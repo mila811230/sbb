@@ -13,11 +13,4 @@ public class HelloController {
 		return "Hello";
 	}
 	
-	@GetMapping("/user/login")
-//	@ResponseBody
-	public String login() {
-		return "user/login";
-	}
-	
-
 }
