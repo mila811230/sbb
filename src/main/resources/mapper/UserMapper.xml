@@ -4,4 +4,8 @@
     <select id="getUserByUsername" resultType="com.mysite.sbb.User">
         SELECT id, username, created_at FROM users WHERE username = #{username};
     </select>
+    
+    <insert id="insertUser" parameterType="com.mysite.sbb.User">
+    	INSERT INTO users (username, psw) VALUES (#{username}, #{psw});
+    </insert>
 </mapper>
