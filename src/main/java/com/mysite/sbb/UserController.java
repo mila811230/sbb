@@ -20,7 +20,7 @@ public class UserController {
 	@GetMapping("/user/{username}")
 	@ResponseBody
 	public User getUser(@PathVariable("username") String username) {
-		return userService.getUser();
+		return userService.getUser(username);
 	}
 
 }
